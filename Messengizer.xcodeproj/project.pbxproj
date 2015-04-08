@@ -15,6 +15,7 @@
 		16B1452C1AD5B27700DD1D32 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16B1452A1AD5B27700DD1D32 /* LaunchScreen.xib */; };
 		16B145381AD5B27700DD1D32 /* MessengizerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B145371AD5B27700DD1D32 /* MessengizerTests.m */; };
 		16B145421AD5B38B00DD1D32 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16B145411AD5B38B00DD1D32 /* FBSDKCoreKit.framework */; };
+		16B145441AD5B58600DD1D32 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16B145431AD5B58600DD1D32 /* FBSDKLoginKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		16B145361AD5B27700DD1D32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16B145371AD5B27700DD1D32 /* MessengizerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessengizerTests.m; sourceTree = "<group>"; };
 		16B145411AD5B38B00DD1D32 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		16B145431AD5B58600DD1D32 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16B145441AD5B58600DD1D32 /* FBSDKLoginKit.framework in Frameworks */,
 				16B145421AD5B38B00DD1D32 /* FBSDKCoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -99,6 +102,7 @@
 		16B1451B1AD5B27700DD1D32 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				16B145431AD5B58600DD1D32 /* FBSDKLoginKit.framework */,
 				16B145411AD5B38B00DD1D32 /* FBSDKCoreKit.framework */,
 				16B1451C1AD5B27700DD1D32 /* Info.plist */,
 				16B1451D1AD5B27700DD1D32 /* main.m */,
