@@ -354,6 +354,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/noahtatum/Documents/FacebookSDK,
+					/Users/philipnevill/Documents/FacebookSDK,
 				);
 				INFOPLIST_FILE = Messengizer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -368,6 +369,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/noahtatum/Documents/FacebookSDK,
+					/Users/philipnevill/Documents/FacebookSDK,
 				);
 				INFOPLIST_FILE = Messengizer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -428,6 +430,7 @@
 				16B1453D1AD5B27700DD1D32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		16B1453E1AD5B27700DD1D32 /* Build configuration list for PBXNativeTarget "MessengizerTests" */ = {
 			isa = XCConfigurationList;
@@ -436,6 +439,7 @@
 				16B145401AD5B27700DD1D32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
