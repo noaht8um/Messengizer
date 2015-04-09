@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
 
 @interface ViewController ()
 
@@ -14,11 +15,25 @@
 
 @implementation ViewController
 
+#pragma mark - View Management
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
     if ([FBSDKAccessToken currentAccessToken]) {
         // User is logged in, do work such as go to next view controller.
+    }
+    
+    if ([FBSDKAccessToken currentAccessToken]) {
+        [[[FBSDKGraphRequest alloc] initWithGraphPath:@"me" parameters:nil]
+         startWithCompletionHandler:^(FBSDKGraphRequestConnection *connection, id result, NSError *error) {
+             /*NSDictionary *test = result;
+             NSLog(@"%@", test);*/
+             
+             for
+             
+         }];
     }
 }
 
@@ -26,5 +41,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
 
 @end
