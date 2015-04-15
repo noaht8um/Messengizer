@@ -30,7 +30,22 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
+    /*STTwitterAPI *testTwitter = [STTwitterAPI twitterAPIAppOnlyWithConsumerKey:@"4FT4CfP4VfMF0x3Ddor4h3R6S"
+                                                        consumerSecret:@"XSOMkMKc1XdpMBwhQfl55GyblmSgVAqQS3zV3wvRjVPAmRXkt0"];
+    
+    [testTwitter verifyCredentialsWithUserSuccessBlock:^(NSString *username, NSString *userID) {
+        
+        [testTwitter getUserTimelineWithScreenName:@"noaht8um"
+                                  successBlock:^(NSArray *statuses) {
+                                      // ...
+                                  } errorBlock:^(NSError *error) {
+                                      // ...
+                                  }];
+        
+    } errorBlock:^(NSError *error) {
+        // ...
+    }];*/
+    
     
 }
 
