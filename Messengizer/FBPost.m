@@ -7,16 +7,20 @@
 //
 
 #import "FBPost.h"
-#import <FBSDKCoreKit/FBSDKCoreKit.h>
+
 
 @implementation FBPost
 
-+ (void)FBPostMessage {
-    if ([FBSDKAccessToken currentAccessToken]) {
-        //Access Graph API
-        [[[FBSDKGraphRequest alloc] initWithGraphPath:@"me" parameters:nil]
++ (void)FBPostMessage:(NSString *)postMessage {
+    if ([[FBSDKAccessToken currentAccessToken] hasGranted:@"publish_actions"]) {
+        [[[FBSDKGraphRequest alloc]
+          initWithGraphPath:@"me/feed"
+          parameters: @{ @"message" : postMessage}
+          HTTPMethod:@"POST"]
          startWithCompletionHandler:^(FBSDKGraphRequestConnection *connection, id result, NSError *error) {
-             NSLog(@"%@", result);
+             if (!error) {
+                 NSLog(@"Post id:%@", result[@"id"]);
+             }
          }];
     }
 }

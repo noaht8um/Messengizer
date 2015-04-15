@@ -10,8 +10,6 @@
 
 @interface MainViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UIButton *postButton;
-@property (weak, nonatomic) IBOutlet UIButton *getButton;
 @property (weak, nonatomic) IBOutlet UITextField *postField;
 
 

@@ -16,10 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PDk-MK-5Jj" customClass="FBSDKLoginButton">
-                                <rect key="frame" x="16" y="413" width="288" height="60"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AMW-fj-Hgx" customClass="FBSDKProfilePictureView">
                                 <rect key="frame" x="110" y="100" width="100" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -50,13 +46,21 @@
                                     <action selector="getButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="1Bl-uU-Z3P"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ziS-p0-xCd">
+                                <rect key="frame" x="110" y="359" width="100" height="30"/>
+                                <state key="normal" title="Connect Apps">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="mZU-jN-Z6y" kind="show" id="Wlv-ir-haP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.69024597977076474" green="0.89539001268932206" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="getButton" destination="WLO-wG-fsi" id="PLF-47-Nm1"/>
-                        <outlet property="postButton" destination="sVg-yV-Rgs" id="ezY-cj-cAb"/>
                         <outlet property="postField" destination="z7f-8L-jgO" id="jmr-CT-03E"/>
                     </connections>
                 </viewController>
@@ -64,5 +68,98 @@
             </objects>
             <point key="canvasLocation" x="460" y="387"/>
         </scene>
+        <!--Add Apps View Controller-->
+        <scene sceneID="lbK-Q4-0AT">
+            <objects>
+                <viewController id="mZU-jN-Z6y" customClass="AddAppsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RGb-gn-6s5"/>
+                        <viewControllerLayoutGuide type="bottom" id="sUW-o3-2PN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jwT-AW-r72">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vas-7u-pID">
+                                <rect key="frame" x="126" y="28" width="68" height="30"/>
+                                <state key="normal" title="Facebook">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Ki2-Ec-xRE" kind="show" id="cAb-ah-RMG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPY-OJ-hLQ">
+                                <rect key="frame" x="16" y="518" width="35" height="30"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="show" id="SK9-lW-bAz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.69024597980000002" green="0.89539001269999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xEa-td-dFk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="843" y="387"/>
+        </scene>
+        <!--Add FB View Controller-->
+        <scene sceneID="osR-Fv-dg8">
+            <objects>
+                <viewController id="Ki2-Ec-xRE" userLabel="Add FB View Controller" customClass="AddFBViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lXW-uZ-b38"/>
+                        <viewControllerLayoutGuide type="bottom" id="QpT-tG-31c"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ies-bQ-szt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="34D-2o-yOU" customClass="FBSDKLoginButton">
+                                <rect key="frame" x="16" y="254" width="288" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VfC-X0-Sxw">
+                                <rect key="frame" x="16" y="518" width="35" height="30"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="mZU-jN-Z6y" kind="show" id="al8-OB-AIG"/>
+                                </connections>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yvf-Bo-3b1">
+                                <rect key="frame" x="197" y="322" width="51" height="31"/>
+                                <connections>
+                                    <action selector="PostPrivilegeSwitch:" destination="Ki2-Ec-xRE" eventType="valueChanged" id="7fi-Sn-jPO"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Post Privileges" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="07P-6O-fZr">
+                                <rect key="frame" x="75" y="327" width="114" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.69024597980000002" green="0.89539001269999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="FBLoginButton" destination="34D-2o-yOU" id="uPk-AW-gx1"/>
+                        <outlet property="PostPrivilegeSwitch" destination="Yvf-Bo-3b1" id="JXi-wl-UWZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bzE-9f-58E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1230" y="387"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="al8-OB-AIG"/>
+    </inferredMetricsTieBreakers>
 </document>

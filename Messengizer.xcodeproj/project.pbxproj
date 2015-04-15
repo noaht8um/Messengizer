@@ -18,6 +18,8 @@
 		16B145381AD5B27700DD1D32 /* MessengizerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B145371AD5B27700DD1D32 /* MessengizerTests.m */; };
 		16B145421AD5B38B00DD1D32 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16B145411AD5B38B00DD1D32 /* FBSDKCoreKit.framework */; };
 		16B145441AD5B58600DD1D32 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16B145431AD5B58600DD1D32 /* FBSDKLoginKit.framework */; };
+		16D14AE81ADE173C00D49723 /* AddFBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D14AE71ADE173C00D49723 /* AddFBViewController.m */; };
+		16D14AEE1ADE1B9800D49723 /* AddAppsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D14AED1ADE1B9800D49723 /* AddAppsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,10 @@
 		16B145371AD5B27700DD1D32 /* MessengizerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessengizerTests.m; sourceTree = "<group>"; };
 		16B145411AD5B38B00DD1D32 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		16B145431AD5B58600DD1D32 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		16D14AE61ADE173C00D49723 /* AddFBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddFBViewController.h; sourceTree = "<group>"; };
+		16D14AE71ADE173C00D49723 /* AddFBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddFBViewController.m; sourceTree = "<group>"; };
+		16D14AEC1ADE1B9800D49723 /* AddAppsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddAppsViewController.h; sourceTree = "<group>"; };
+		16D14AED1ADE1B9800D49723 /* AddAppsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddAppsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,10 +99,14 @@
 		16B1451A1AD5B27700DD1D32 /* Messengizer */ = {
 			isa = PBXGroup;
 			children = (
-				16B1451F1AD5B27700DD1D32 /* AppDelegate.h */,
-				16B145201AD5B27700DD1D32 /* AppDelegate.m */,
+				16D14AE61ADE173C00D49723 /* AddFBViewController.h */,
+				16D14AE71ADE173C00D49723 /* AddFBViewController.m */,
+				16D14AEC1ADE1B9800D49723 /* AddAppsViewController.h */,
+				16D14AED1ADE1B9800D49723 /* AddAppsViewController.m */,
 				16B145221AD5B27700DD1D32 /* MainViewController.h */,
 				16B145231AD5B27700DD1D32 /* MainViewController.m */,
+				16B1451F1AD5B27700DD1D32 /* AppDelegate.h */,
+				16B145201AD5B27700DD1D32 /* AppDelegate.m */,
 				162C319F1ADDD9300091E4F0 /* FBPost.h */,
 				162C31A01ADDD9300091E4F0 /* FBPost.m */,
 				162C31A31ADDE22C0091E4F0 /* FBGet.h */,
@@ -243,6 +253,8 @@
 				16B145211AD5B27700DD1D32 /* AppDelegate.m in Sources */,
 				16B1451E1AD5B27700DD1D32 /* main.m in Sources */,
 				162C31A51ADDE22C0091E4F0 /* FBGet.m in Sources */,
+				16D14AEE1ADE1B9800D49723 /* AddAppsViewController.m in Sources */,
+				16D14AE81ADE173C00D49723 /* AddFBViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +376,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -380,6 +393,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";

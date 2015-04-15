@@ -7,7 +7,6 @@
 //
 
 #import "MainViewController.h"
-#import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import "FBPost.h"
 #import "FBGet.h"
 
@@ -18,8 +17,7 @@
 
 @implementation MainViewController
 - (IBAction)postButton:(id)sender {
-    //NSLog(@"post");
-    NSLog(@"%@", self.postField.text);
+    [FBPost FBPostMessage:self.postField.text];
     
 }
 

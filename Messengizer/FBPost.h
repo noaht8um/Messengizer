@@ -7,9 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
 
 @interface FBPost : NSObject
 
-+ (void)FBPostMessage;
++ (void)FBPostMessage:(NSString *)postMessage;
 
 @end
