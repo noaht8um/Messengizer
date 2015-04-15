@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		162C31A11ADDD9300091E4F0 /* FBPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 162C31A01ADDD9300091E4F0 /* FBPost.m */; };
 		162C31A51ADDE22C0091E4F0 /* FBGet.m in Sources */ = {isa = PBXBuildFile; fileRef = 162C31A41ADDE22C0091E4F0 /* FBGet.m */; };
+		164B7BD71ADEDA3C005528D9 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 164B7BD41ADEDA3C005528D9 /* TwitterKit.framework */; };
+		164B7BD81ADEDA3C005528D9 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 164B7BD51ADEDA3C005528D9 /* TwitterKitResources.bundle */; };
+		164B7BD91ADEDA3C005528D9 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 164B7BD61ADEDA3C005528D9 /* Fabric.framework */; };
+		164B7BDC1ADEDA8B005528D9 /* AddTwitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 164B7BDB1ADEDA8B005528D9 /* AddTwitterViewController.m */; };
 		16B1451E1AD5B27700DD1D32 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B1451D1AD5B27700DD1D32 /* main.m */; };
 		16B145211AD5B27700DD1D32 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B145201AD5B27700DD1D32 /* AppDelegate.m */; };
 		16B145241AD5B27700DD1D32 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B145231AD5B27700DD1D32 /* MainViewController.m */; };
@@ -37,6 +41,11 @@
 		162C31A01ADDD9300091E4F0 /* FBPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBPost.m; sourceTree = "<group>"; };
 		162C31A31ADDE22C0091E4F0 /* FBGet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBGet.h; sourceTree = "<group>"; };
 		162C31A41ADDE22C0091E4F0 /* FBGet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBGet.m; sourceTree = "<group>"; };
+		164B7BD41ADEDA3C005528D9 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = SOURCE_ROOT; };
+		164B7BD51ADEDA3C005528D9 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = SOURCE_ROOT; };
+		164B7BD61ADEDA3C005528D9 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = SOURCE_ROOT; };
+		164B7BDA1ADEDA8B005528D9 /* AddTwitterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddTwitterViewController.h; sourceTree = "<group>"; };
+		164B7BDB1ADEDA8B005528D9 /* AddTwitterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddTwitterViewController.m; sourceTree = "<group>"; };
 		16B145181AD5B27700DD1D32 /* Messengizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Messengizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16B1451C1AD5B27700DD1D32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16B1451D1AD5B27700DD1D32 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -65,6 +74,8 @@
 			files = (
 				16B145441AD5B58600DD1D32 /* FBSDKLoginKit.framework in Frameworks */,
 				16B145421AD5B38B00DD1D32 /* FBSDKCoreKit.framework in Frameworks */,
+				164B7BD71ADEDA3C005528D9 /* TwitterKit.framework in Frameworks */,
+				164B7BD91ADEDA3C005528D9 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,12 +110,14 @@
 		16B1451A1AD5B27700DD1D32 /* Messengizer */ = {
 			isa = PBXGroup;
 			children = (
-				16D14AE61ADE173C00D49723 /* AddFBViewController.h */,
-				16D14AE71ADE173C00D49723 /* AddFBViewController.m */,
-				16D14AEC1ADE1B9800D49723 /* AddAppsViewController.h */,
-				16D14AED1ADE1B9800D49723 /* AddAppsViewController.m */,
 				16B145221AD5B27700DD1D32 /* MainViewController.h */,
 				16B145231AD5B27700DD1D32 /* MainViewController.m */,
+				16D14AEC1ADE1B9800D49723 /* AddAppsViewController.h */,
+				16D14AED1ADE1B9800D49723 /* AddAppsViewController.m */,
+				16D14AE61ADE173C00D49723 /* AddFBViewController.h */,
+				16D14AE71ADE173C00D49723 /* AddFBViewController.m */,
+				164B7BDA1ADEDA8B005528D9 /* AddTwitterViewController.h */,
+				164B7BDB1ADEDA8B005528D9 /* AddTwitterViewController.m */,
 				16B1451F1AD5B27700DD1D32 /* AppDelegate.h */,
 				16B145201AD5B27700DD1D32 /* AppDelegate.m */,
 				162C319F1ADDD9300091E4F0 /* FBPost.h */,
@@ -122,6 +135,9 @@
 		16B1451B1AD5B27700DD1D32 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				164B7BD41ADEDA3C005528D9 /* TwitterKit.framework */,
+				164B7BD51ADEDA3C005528D9 /* TwitterKitResources.bundle */,
+				164B7BD61ADEDA3C005528D9 /* Fabric.framework */,
 				16B145431AD5B58600DD1D32 /* FBSDKLoginKit.framework */,
 				16B145411AD5B38B00DD1D32 /* FBSDKCoreKit.framework */,
 				16B1451C1AD5B27700DD1D32 /* Info.plist */,
@@ -157,6 +173,7 @@
 				16B145141AD5B27700DD1D32 /* Sources */,
 				16B145151AD5B27700DD1D32 /* Frameworks */,
 				16B145161AD5B27700DD1D32 /* Resources */,
+				164B7BD31ADEDA09005528D9 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -228,6 +245,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				164B7BD81ADEDA3C005528D9 /* TwitterKitResources.bundle in Resources */,
 				16B145271AD5B27700DD1D32 /* Main.storyboard in Resources */,
 				16B1452C1AD5B27700DD1D32 /* LaunchScreen.xib in Resources */,
 				16B145291AD5B27700DD1D32 /* Images.xcassets in Resources */,
@@ -243,11 +261,28 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		164B7BD31ADEDA09005528D9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run dc869c78cd17a0b4310e91e4331842449e9935fa 42b2f54f82b3c2700120571f81187d0a457154a85a74b9fb06932f6aa7a37388";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		16B145141AD5B27700DD1D32 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				164B7BDC1ADEDA8B005528D9 /* AddTwitterViewController.m in Sources */,
 				16B145241AD5B27700DD1D32 /* MainViewController.m in Sources */,
 				162C31A11ADDD9300091E4F0 /* FBPost.m in Sources */,
 				16B145211AD5B27700DD1D32 /* AppDelegate.m in Sources */,
@@ -380,7 +415,10 @@
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = "~/Documents/FacebookSDK";
+				FRAMEWORK_SEARCH_PATHS = (
+					"~/Documents/FacebookSDK",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Messengizer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -397,7 +435,10 @@
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = "~/Documents/FacebookSDK";
+				FRAMEWORK_SEARCH_PATHS = (
+					"~/Documents/FacebookSDK",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Messengizer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

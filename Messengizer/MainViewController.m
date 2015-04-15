@@ -17,8 +17,10 @@
 
 @implementation MainViewController
 - (IBAction)postButton:(id)sender {
+    //post message to facebook from postField
     [FBPost FBPostMessage:self.postField.text];
-    
+    //clear postField
+    self.postField.text = @"";
 }
 
 - (IBAction)getButton:(id)sender {

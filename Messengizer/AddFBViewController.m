@@ -35,19 +35,6 @@
     }
 }
 
-/*
- if ([[FBSDKAccessToken currentAccessToken] hasGranted:@"publish_actions"]) {
- // TODO: publish content.
- } else {
- FBSDKLoginManager *loginManager = [[FBSDKLoginManager alloc] init];
- [loginManager logInWithPublishPermissions:@[@"publish_actions"]
- handler:^(FBSDKLoginManagerLoginResult *result, NSError *error) {
- //TODO: process error or result.
- }];
- }
- NSLog(@"HI");
- */
-
 
 -(void)PostPrivilegeCheck {
     if ([[FBSDKAccessToken currentAccessToken] hasGranted:@"publish_actions"]) {
@@ -74,7 +61,6 @@
     
     self.FBLoginButton.readPermissions = @[@"public_profile"];
     
-    //Flip boolean switch if POST privileges are enabled
     [self PostPrivilegeCheck];
     
 }

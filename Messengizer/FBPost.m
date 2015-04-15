@@ -8,7 +8,6 @@
 
 #import "FBPost.h"
 
-
 @implementation FBPost
 
 + (void)FBPostMessage:(NSString *)postMessage {

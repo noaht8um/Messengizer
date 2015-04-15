@@ -17,11 +17,7 @@
         //Access Graph API
         [[[FBSDKGraphRequest alloc] initWithGraphPath:@"me" parameters:nil]
          startWithCompletionHandler:^(FBSDKGraphRequestConnection *connection, id result, NSError *error) {
-             //NSLog(@"%@", result[@"name"]);
-             NSLog(@"%@", result);
-             //NSLog(@"Your name is" + result[@"name"]);
-             //NSString *usrName = result[@"name"];
-             
+             NSLog(@"%@", result[@"name"]);
          }];
     }
 }
