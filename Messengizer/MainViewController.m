@@ -7,45 +7,77 @@
 //
 
 #import "MainViewController.h"
-#import "FBPost.h"
-#import "FBGet.h"
 
 @interface MainViewController ()
 
 @end
 
-
 @implementation MainViewController
 - (IBAction)postButton:(id)sender {
     //post message to facebook from postField
     [FBPost FBPostMessage:self.postField.text];
+    //post message to twitter from postField
+    [TwitterPost twitterPostMessage:self.postField.text];
     //clear postField
     self.postField.text = @"";
+    
+    [TwitterPost twitterUploadImage:self.imageView.image];
+    //[FBPost FBUploadPhoto:self.imageView.image];
 }
+
 
 - (IBAction)getButton:(id)sender {
     [FBGet FBGetInfo];
 }
 
+- (IBAction)takePhoto:(UIButton *)sender {
+    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+    picker.delegate = self;
+    picker.allowsEditing = YES;
+    picker.sourceType = UIImagePickerControllerSourceTypeCamera;
+    
+    [self presentViewController:picker animated:YES completion:NULL];
+}
+
+- (IBAction)choosePhoto:(UIButton *)sender {
+    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+    picker.delegate = self;
+    picker.allowsEditing = YES;
+    picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    
+    [self presentViewController:picker animated:YES completion:NULL];
+
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+    
+    [picker dismissViewControllerAnimated:YES completion:NULL];
+    UIImage *chosenImage = info[UIImagePickerControllerEditedImage];
+    self.imageView.image = chosenImage;
+    //[TwitterPost twitterUploadImage:chosenImage];
+    //[FBPost FBUploadPhoto:chosenImage];
+}
+
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
+    
+    [picker dismissViewControllerAnimated:YES completion:NULL];
+}
 
 - (void)viewDidLoad
 {
-    /*STTwitterAPI *testTwitter = [STTwitterAPI twitterAPIAppOnlyWithConsumerKey:@"4FT4CfP4VfMF0x3Ddor4h3R6S"
-                                                        consumerSecret:@"XSOMkMKc1XdpMBwhQfl55GyblmSgVAqQS3zV3wvRjVPAmRXkt0"];
+    [super viewDidLoad];
     
-    [testTwitter verifyCredentialsWithUserSuccessBlock:^(NSString *username, NSString *userID) {
+    if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
         
-        [testTwitter getUserTimelineWithScreenName:@"noaht8um"
-                                  successBlock:^(NSArray *statuses) {
-                                      // ...
-                                  } errorBlock:^(NSError *error) {
-                                      // ...
-                                  }];
+        UIAlertView *myAlertView = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                              message:@"Device has no camera"
+                                                             delegate:nil
+                                                    cancelButtonTitle:@"OK"
+                                                    otherButtonTitles: nil];
         
-    } errorBlock:^(NSError *error) {
-        // ...
-    }];*/
-    
+        [myAlertView show];
+        
+    }
     
 }
 

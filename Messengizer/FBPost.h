@@ -9,9 +9,11 @@
 #import <Foundation/Foundation.h>
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
+#import "CommonMethods.h"
 
 @interface FBPost : NSObject
 
 + (void)FBPostMessage:(NSString *)postMessage;
++ (void)FBUploadPhoto:(UIImage *)uploadImage;
 
 @end

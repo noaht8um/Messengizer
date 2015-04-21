@@ -35,34 +35,34 @@
     }
 }
 
-
 -(void)PostPrivilegeCheck {
+    if ([FBSDKAccessToken currentAccessToken]) {
+        //If logged in, enable PostPrivilegeSwitch
+        self.PostPrivilegeSwitch.enabled = YES;
+        NSLog(@"Switch Enabled");
+    }
+    else {
+        //If NOT logged in, disable PostPrivilegeSwitch
+        self.PostPrivilegeSwitch.enabled = NO;
+        NSLog(@"Switch Disabled");
+    }
+    
     if ([[FBSDKAccessToken currentAccessToken] hasGranted:@"publish_actions"]) {
         //Flip Button on
         [self.PostPrivilegeSwitch setOn:YES];
-        NSLog(@"ON");
+        NSLog(@"Post Permissions ON");
     }
     else {
         //Flip Button off
         [self.PostPrivilegeSwitch setOn:NO];
-        NSLog(@"OFF");
+        NSLog(@"Post Permissions OFF");
     }
 }
 
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    if ([FBSDKAccessToken currentAccessToken]) {
-        self.PostPrivilegeSwitch.enabled = YES;
-    }
-    else {
-        self.PostPrivilegeSwitch.enabled = NO;
-    }
-    
-    self.FBLoginButton.readPermissions = @[@"public_profile"];
-    
-    [self PostPrivilegeCheck];
-    
 }
 
 - (void)didReceiveMemoryWarning {

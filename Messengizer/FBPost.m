@@ -18,11 +18,31 @@
           HTTPMethod:@"POST"]
          startWithCompletionHandler:^(FBSDKGraphRequestConnection *connection, id result, NSError *error) {
              if (!error) {
-                 NSLog(@"Post id:%@", result[@"id"]);
+                 //NSLog(@"Post id:%@", result[@"id"]);
+                 NSLog(@"Result:%@", result);
              }
          }];
     }
 }
 
++ (void)FBUploadPhoto:(UIImage *)uploadImage {
+    
+    NSData *encodedImage = [CommonMethods encodeImageTo64:uploadImage];
+    
+    if ([[FBSDKAccessToken currentAccessToken] hasGranted:@"publish_actions"]) {
+        [[[FBSDKGraphRequest alloc]
+          initWithGraphPath:@"me/photos"
+          parameters: @{ @"source" : encodedImage,
+                         @"caption" : @"hi" }
+          HTTPMethod:@"POST"]
+         startWithCompletionHandler:^(FBSDKGraphRequestConnection *connection, id result, NSError *error) {
+             if (!error) {
+                 //NSLog(@"Post id:%@", result[@"id"]);
+                 NSLog(@"Result:%@", result);
+             }
+         }];
+    }
+    
+}
 
 @end

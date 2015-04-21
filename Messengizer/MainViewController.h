@@ -8,10 +8,16 @@
 
 #import <UIKit/UIKit.h>
 #import <TwitterKit/TwitterKit.h>
+#import "FBPost.h"
+#import "FBGet.h"
+#import "TwitterPost.h"
 
-@interface MainViewController : UIViewController
+@interface MainViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *postField;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
+- (IBAction)takePhoto:  (UIButton *)sender;
+- (IBAction)choosePhoto:(UIButton *)sender;
 
 @end

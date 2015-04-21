@@ -55,12 +55,34 @@
                                     <segue destination="mZU-jN-Z6y" kind="show" id="Wlv-ir-haP"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xBQ-om-iRc">
+                                <rect key="frame" x="111" y="518" width="98" height="30"/>
+                                <state key="normal" title="Choose Photo">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="choosePhoto:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ebG-8x-piP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aOs-tG-H2I">
+                                <rect key="frame" x="122" y="480" width="77" height="30"/>
+                                <state key="normal" title="Take Photo">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="takePhoto:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="lo6-rv-ezE"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qDT-7E-iYn">
+                                <rect key="frame" x="16" y="317" width="288" height="155"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.69024597977076474" green="0.89539001268932206" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="imageView" destination="qDT-7E-iYn" id="Hkn-V9-Uqi"/>
                         <outlet property="postField" destination="z7f-8L-jgO" id="jmr-CT-03E"/>
                     </connections>
                 </viewController>

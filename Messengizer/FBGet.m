@@ -7,8 +7,6 @@
 //
 
 #import "FBGet.h"
-#import <FBSDKCoreKit/FBSDKCoreKit.h>
-
 
 @implementation FBGet
 
