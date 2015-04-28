@@ -12,6 +12,14 @@
 #import "FBGet.h"
 #import "TwitterPost.h"
 
+@class MainViewController;
+
+@protocol MainViewControllerDelegate <NSObject>
+
+- (void)sendFrom:(MainViewController *)controller
+           image:(UIImage *)image;
+@end
+
 @interface MainViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *postField;

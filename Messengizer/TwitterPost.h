@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <TwitterKit/TwitterKit.h>
+#import "MainViewController.h"
 
 @interface TwitterPost : NSObject
 

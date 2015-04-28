@@ -18,7 +18,6 @@
 
 + (void)twitterPostMessage:(NSString *)postMessage {
     
-    
     NSString *testPostEndpoint = @"https://api.twitter.com/1.1/statuses/update.json";
     NSDictionary *params = @{@"status" : postMessage};
     NSError *clientError;
@@ -55,6 +54,8 @@
 
 + (NSString *)twitterUploadImage:(UIImage *)imageToUpload {
     
+    __block NSString *returningJSON;
+    
     NSString *encodedImage = [self encodeImageTo64:imageToUpload];
     
     NSString *testPostEndpoint = @"https://upload.twitter.com/1.1/media/upload.json";
@@ -77,15 +78,18 @@
                                        JSONObjectWithData:data
                                        options:0
                                        error:&jsonError];
-                 NSLog(@"%@", json);
+             returningJSON = json[@"media_id"];
+                 NSLog(@"%@", json[@"media_id"]);
 
                  NSLog(@"Error: %@", connectionError);
          }];
         NSLog(@"Error: %@", clientError);
-    return NULL;
+    return returningJSON;
 }
 
 + (void)twitterPostMessageWithImage:(NSString *)postMessage {
+    
+    //UIImage *testImage = MainViewController.imageView.image;
     
     NSString *testPostEndpoint = @"https://api.twitter.com/1.1/statuses/update.json";
     NSDictionary *params = @{@"status" : postMessage};

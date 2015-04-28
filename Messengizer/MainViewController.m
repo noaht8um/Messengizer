@@ -19,10 +19,11 @@
     //post message to twitter from postField
     [TwitterPost twitterPostMessage:self.postField.text];
     //clear postField
+    //[TwitterPost twitterPostMessageWithImage:self.postField.text];
     self.postField.text = @"";
     
     [TwitterPost twitterUploadImage:self.imageView.image];
-    //[FBPost FBUploadPhoto:self.imageView.image];
+    [FBPost FBUploadPhoto:self.imageView.image];
 }
 
 
@@ -54,8 +55,6 @@
     [picker dismissViewControllerAnimated:YES completion:NULL];
     UIImage *chosenImage = info[UIImagePickerControllerEditedImage];
     self.imageView.image = chosenImage;
-    //[TwitterPost twitterUploadImage:chosenImage];
-    //[FBPost FBUploadPhoto:chosenImage];
 }
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
@@ -66,9 +65,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
     if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
-        
         UIAlertView *myAlertView = [[UIAlertView alloc] initWithTitle:@"Error"
                                                               message:@"Device has no camera"
                                                              delegate:nil
@@ -76,9 +73,7 @@
                                                     otherButtonTitles: nil];
         
         [myAlertView show];
-        
     }
-    
 }
 
 - (void)didReceiveMemoryWarning {
