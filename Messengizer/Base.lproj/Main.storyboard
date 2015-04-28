@@ -244,7 +244,7 @@
                                 <size key="shadowOffset" width="-3" height="-1"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Ever wanted to post to Facebook and Twitter at the same time? Well ... that is pretty much all we can do ... Enjoy" translatesAutoresizingMaskIntoConstraints="NO" id="OK8-ee-LcA">
-                                <rect key="frame" x="64" y="178" width="193" height="124"/>
+                                <rect key="frame" x="80" y="165" width="161" height="152"/>
                                 <color key="backgroundColor" red="0.31764705879999999" green="0.45098039220000002" blue="0.59607843140000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="18"/>
@@ -259,10 +259,10 @@
             </objects>
             <point key="canvasLocation" x="460" y="1237"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="BjN-s5-wMY">
             <objects>
-                <viewController id="PUB-Hs-uxo" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Sign Up View Controller" id="PUB-Hs-uxo" customClass="SignUpViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Zg6-Bf-Plc"/>
                         <viewControllerLayoutGuide type="bottom" id="EVQ-at-Cyy"/>
@@ -322,6 +322,9 @@
                                     <color key="titleColor" red="0.99215686270000003" green="0.3411764706" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="saveInfo:" destination="PUB-Hs-uxo" eventType="touchUpInside" id="Gyb-PM-zir"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ltr-gd-3jX">
                                 <rect key="frame" x="36" y="517" width="61" height="35"/>
@@ -344,6 +347,12 @@
                         <color key="backgroundColor" red="0.31764705879999999" green="0.45098039220000002" blue="0.59607843140000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="txtFirstname" destination="ESk-1H-AJe" id="pxA-AK-OII"/>
+                        <outlet property="txtLastname" destination="0tQ-xa-rTp" id="6Vp-bf-dt7"/>
+                        <outlet property="txtPassword" destination="lW6-Aq-yGz" id="WbB-K3-D0p"/>
+                        <outlet property="txtUsername" destination="UKz-gx-zrw" id="koB-6k-3PS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WLI-ko-7hu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
