@@ -28,6 +28,8 @@
 		0AF96F441AEFF04800629731 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF96F431AEFF04800629731 /* DBManager.m */; };
 		0AF970D31AF0024000629731 /* messengizer.sql in Resources */ = {isa = PBXBuildFile; fileRef = 0AF970D21AF0024000629731 /* messengizer.sql */; };
 		0AF970D61AF00DEF00629731 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF970D51AF00DEF00629731 /* SignUpViewController.m */; };
+		0AF970D91AF036D600629731 /* Facebook_light.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AF970D71AF036D600629731 /* Facebook_light.png */; };
+		0AF970DA1AF036D600629731 /* twitter-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AF970D81AF036D600629731 /* twitter-icon.png */; };
 		162C31A11ADDD9300091E4F0 /* FBPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 162C31A01ADDD9300091E4F0 /* FBPost.m */; };
 		162C31A51ADDE22C0091E4F0 /* FBGet.m in Sources */ = {isa = PBXBuildFile; fileRef = 162C31A41ADDE22C0091E4F0 /* FBGet.m */; };
 		164B7BD71ADEDA3C005528D9 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 164B7BD41ADEDA3C005528D9 /* TwitterKit.framework */; };
@@ -88,6 +90,8 @@
 		0AF970D21AF0024000629731 /* messengizer.sql */ = {isa = PBXFileReference; lastKnownFileType = file; path = messengizer.sql; sourceTree = "<group>"; };
 		0AF970D41AF00DEF00629731 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
 		0AF970D51AF00DEF00629731 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+		0AF970D71AF036D600629731 /* Facebook_light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Facebook_light.png; sourceTree = "<group>"; };
+		0AF970D81AF036D600629731 /* twitter-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitter-icon.png"; sourceTree = "<group>"; };
 		162C319F1ADDD9300091E4F0 /* FBPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBPost.h; sourceTree = "<group>"; };
 		162C31A01ADDD9300091E4F0 /* FBPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBPost.m; sourceTree = "<group>"; };
 		162C31A31ADDE22C0091E4F0 /* FBGet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBGet.h; sourceTree = "<group>"; };
@@ -148,6 +152,8 @@
 		0A5523D21AE8158D00D21E60 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				0AF970D71AF036D600629731 /* Facebook_light.png */,
+				0AF970D81AF036D600629731 /* twitter-icon.png */,
 				0A5523F71AE9675200D21E60 /* logout-xl.png */,
 				0A5523F31AE9657000D21E60 /* add.png */,
 				0A5523F41AE9657000D21E60 /* add_folder.png */,
@@ -364,6 +370,7 @@
 				0A5523D61AE815E700D21E60 /* menu.png in Resources */,
 				0A5523EF1AE8B09F00D21E60 /* icon-profile.png in Resources */,
 				0A5523F11AE8B09F00D21E60 /* minimal_social_media_icons__psd__by_softarea-d5c0f60.png in Resources */,
+				0AF970DA1AF036D600629731 /* twitter-icon.png in Resources */,
 				0A5523F61AE9657000D21E60 /* add_folder.png in Resources */,
 				16B145271AD5B27700DD1D32 /* Main.storyboard in Resources */,
 				0A5523F51AE9657000D21E60 /* add.png in Resources */,
@@ -372,6 +379,7 @@
 				0AF970D31AF0024000629731 /* messengizer.sql in Resources */,
 				0A5523F81AE9675200D21E60 /* logout-xl.png in Resources */,
 				16B1452C1AD5B27700DD1D32 /* LaunchScreen.xib in Resources */,
+				0AF970D91AF036D600629731 /* Facebook_light.png in Resources */,
 				0A5523F21AE8B09F00D21E60 /* users.png in Resources */,
 				16B145291AD5B27700DD1D32 /* Images.xcassets in Resources */,
 				0A5523D81AE815E700D21E60 /* nav_bg.png in Resources */,
