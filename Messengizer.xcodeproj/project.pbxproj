@@ -24,6 +24,9 @@
 		0A5523F81AE9675200D21E60 /* logout-xl.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5523F71AE9675200D21E60 /* logout-xl.png */; };
 		0A5523FB1AEEF45B00D21E60 /* AddAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5523FA1AEEF45B00D21E60 /* AddAccountViewController.m */; };
 		0A5523FE1AEEFB4600D21E60 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5523FD1AEEFB4600D21E60 /* SettingsViewController.m */; };
+		0AF96F411AEFEFE200629731 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF96F401AEFEFE200629731 /* libsqlite3.dylib */; };
+		0AF96F441AEFF04800629731 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF96F431AEFF04800629731 /* DBManager.m */; };
+		0AF970D31AF0024000629731 /* messengizer.sql in Resources */ = {isa = PBXBuildFile; fileRef = 0AF970D21AF0024000629731 /* messengizer.sql */; };
 		162C31A11ADDD9300091E4F0 /* FBPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 162C31A01ADDD9300091E4F0 /* FBPost.m */; };
 		162C31A51ADDE22C0091E4F0 /* FBGet.m in Sources */ = {isa = PBXBuildFile; fileRef = 162C31A41ADDE22C0091E4F0 /* FBGet.m */; };
 		164B7BD71ADEDA3C005528D9 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 164B7BD41ADEDA3C005528D9 /* TwitterKit.framework */; };
@@ -78,6 +81,10 @@
 		0A5523FA1AEEF45B00D21E60 /* AddAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddAccountViewController.m; sourceTree = "<group>"; };
 		0A5523FC1AEEFB4600D21E60 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		0A5523FD1AEEFB4600D21E60 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		0AF96F401AEFEFE200629731 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		0AF96F421AEFF04800629731 /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		0AF96F431AEFF04800629731 /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
+		0AF970D21AF0024000629731 /* messengizer.sql */ = {isa = PBXFileReference; lastKnownFileType = file; path = messengizer.sql; sourceTree = "<group>"; };
 		162C319F1ADDD9300091E4F0 /* FBPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBPost.h; sourceTree = "<group>"; };
 		162C31A01ADDD9300091E4F0 /* FBPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBPost.m; sourceTree = "<group>"; };
 		162C31A31ADDE22C0091E4F0 /* FBGet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBGet.h; sourceTree = "<group>"; };
@@ -117,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AF96F411AEFEFE200629731 /* libsqlite3.dylib in Frameworks */,
 				16B145441AD5B58600DD1D32 /* FBSDKLoginKit.framework in Frameworks */,
 				16B145421AD5B38B00DD1D32 /* FBSDKCoreKit.framework in Frameworks */,
 				164B7BD71ADEDA3C005528D9 /* TwitterKit.framework in Frameworks */,
@@ -174,6 +182,8 @@
 				0A5523E21AE8970A00D21E60 /* SidebarViewController.m */,
 				0A5523FC1AEEFB4600D21E60 /* SettingsViewController.h */,
 				0A5523FD1AEEFB4600D21E60 /* SettingsViewController.m */,
+				0AF96F421AEFF04800629731 /* DBManager.h */,
+				0AF96F431AEFF04800629731 /* DBManager.m */,
 			);
 			name = "New Storyboard Classes";
 			sourceTree = "<group>";
@@ -231,6 +241,8 @@
 		16B1451B1AD5B27700DD1D32 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0AF970D21AF0024000629731 /* messengizer.sql */,
+				0AF96F401AEFEFE200629731 /* libsqlite3.dylib */,
 				164B7BD41ADEDA3C005528D9 /* TwitterKit.framework */,
 				164B7BD51ADEDA3C005528D9 /* TwitterKitResources.bundle */,
 				164B7BD61ADEDA3C005528D9 /* Fabric.framework */,
@@ -352,6 +364,7 @@
 				0A5523F51AE9657000D21E60 /* add.png in Resources */,
 				0A5523ED1AE8B09F00D21E60 /* a1228223.png in Resources */,
 				0A5523F01AE8B09F00D21E60 /* images.jpeg in Resources */,
+				0AF970D31AF0024000629731 /* messengizer.sql in Resources */,
 				0A5523F81AE9675200D21E60 /* logout-xl.png in Resources */,
 				16B1452C1AD5B27700DD1D32 /* LaunchScreen.xib in Resources */,
 				0A5523F21AE8B09F00D21E60 /* users.png in Resources */,
@@ -397,6 +410,7 @@
 				16B145241AD5B27700DD1D32 /* MainViewController.m in Sources */,
 				162C31A11ADDD9300091E4F0 /* FBPost.m in Sources */,
 				16B145211AD5B27700DD1D32 /* AppDelegate.m in Sources */,
+				0AF96F441AEFF04800629731 /* DBManager.m in Sources */,
 				16B1451E1AD5B27700DD1D32 /* main.m in Sources */,
 				0A5523FB1AEEF45B00D21E60 /* AddAccountViewController.m in Sources */,
 				162C31A51ADDE22C0091E4F0 /* FBGet.m in Sources */,
@@ -534,6 +548,7 @@
 					"~/Documents/FacebookSDK",
 					"$(PROJECT_DIR)",
 					/Users/noahtatum/Documents/FacebookSDK,
+					"$(PROJECT_DIR)/Messengizer/FacebookSDK",
 				);
 				INFOPLIST_FILE = Messengizer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
@@ -555,6 +570,7 @@
 					"~/Documents/FacebookSDK",
 					"$(PROJECT_DIR)",
 					/Users/noahtatum/Documents/FacebookSDK,
+					"$(PROJECT_DIR)/Messengizer/FacebookSDK",
 				);
 				INFOPLIST_FILE = Messengizer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
