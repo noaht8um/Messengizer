@@ -40,7 +40,6 @@
 		1690832B1ADF092500C6EC75 /* TwitterPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 1690832A1ADF092500C6EC75 /* TwitterPost.m */; };
 		16B1451E1AD5B27700DD1D32 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B1451D1AD5B27700DD1D32 /* main.m */; };
 		16B145211AD5B27700DD1D32 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B145201AD5B27700DD1D32 /* AppDelegate.m */; };
-		16B145241AD5B27700DD1D32 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B145231AD5B27700DD1D32 /* MainViewController.m */; };
 		16B145271AD5B27700DD1D32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16B145251AD5B27700DD1D32 /* Main.storyboard */; };
 		16B145291AD5B27700DD1D32 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16B145281AD5B27700DD1D32 /* Images.xcassets */; };
 		16B1452C1AD5B27700DD1D32 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16B1452A1AD5B27700DD1D32 /* LaunchScreen.xib */; };
@@ -110,8 +109,6 @@
 		16B1451D1AD5B27700DD1D32 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		16B1451F1AD5B27700DD1D32 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		16B145201AD5B27700DD1D32 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		16B145221AD5B27700DD1D32 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		16B145231AD5B27700DD1D32 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		16B145261AD5B27700DD1D32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		16B145281AD5B27700DD1D32 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		16B1452B1AD5B27700DD1D32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -226,8 +223,6 @@
 			isa = PBXGroup;
 			children = (
 				0A5523DD1AE8951700D21E60 /* New Storyboard Classes */,
-				16B145221AD5B27700DD1D32 /* MainViewController.h */,
-				16B145231AD5B27700DD1D32 /* MainViewController.m */,
 				16D14AEC1ADE1B9800D49723 /* AddAppsViewController.h */,
 				16D14AED1ADE1B9800D49723 /* AddAppsViewController.m */,
 				16D14AE61ADE173C00D49723 /* AddFBViewController.h */,
@@ -425,7 +420,6 @@
 				16F44EDC1AE46D0E00B0B10E /* CommonMethods.m in Sources */,
 				164B7BDC1ADEDA8B005528D9 /* AddTwitterViewController.m in Sources */,
 				0AF970D61AF00DEF00629731 /* SignUpViewController.m in Sources */,
-				16B145241AD5B27700DD1D32 /* MainViewController.m in Sources */,
 				162C31A11ADDD9300091E4F0 /* FBPost.m in Sources */,
 				16B145211AD5B27700DD1D32 /* AppDelegate.m in Sources */,
 				0AF96F441AEFF04800629731 /* DBManager.m in Sources */,
@@ -569,7 +563,7 @@
 					"$(PROJECT_DIR)/Messengizer/FacebookSDK",
 				);
 				INFOPLIST_FILE = Messengizer/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -591,7 +585,7 @@
 					"$(PROJECT_DIR)/Messengizer/FacebookSDK",
 				);
 				INFOPLIST_FILE = Messengizer/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
