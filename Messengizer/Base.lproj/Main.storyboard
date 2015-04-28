@@ -488,24 +488,6 @@
                                     <segue destination="Snq-EF-8C3" kind="show" id="YSF-oJ-y1I"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Logout" id="kzX-Bx-P9d">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kzX-Bx-P9d" id="Cdt-U0-GL1">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logout-xl.png" translatesAutoresizingMaskIntoConstraints="NO" id="leT-03-CrK">
-                                            <rect key="frame" x="8" y="3" width="38" height="38"/>
-                                        </imageView>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q7g-eH-LoC">
-                                            <rect key="frame" x="54" y="11" width="120" height="30"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="23"/>
-                                            <color key="textColor" red="0.31764705879999999" green="0.45098039220000002" blue="0.59607843140000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </label>
-                                    </subviews>
-                                </tableViewCellContentView>
-                            </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="tNp-wu-haw" id="qTQ-or-M2d"/>
@@ -710,6 +692,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="YSF-oJ-y1I"/>
         <segue reference="bV3-Ix-XBB"/>
-        <segue reference="bV1-gf-tc2"/>
+        <segue reference="al8-OB-AIG"/>
     </inferredMetricsTieBreakers>
 </document>
