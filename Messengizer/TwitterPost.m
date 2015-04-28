@@ -89,7 +89,7 @@
 
 + (void)twitterPostMessageWithImage:(NSString *)postMessage {
     
-    //UIImage *testImage = MainViewController.imageView.image;
+    //UIImage *testImage =
     
     NSString *testPostEndpoint = @"https://api.twitter.com/1.1/statuses/update.json";
     NSDictionary *params = @{@"status" : postMessage};

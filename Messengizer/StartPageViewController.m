@@ -15,6 +15,20 @@
 
 @implementation StartPageViewController
 
+- (IBAction)postButton:(id)sender {
+    
+    //post message to facebook from postField
+    [FBPost FBPostMessage:self.postField.text];
+    //post message to twitter from postField
+    [TwitterPost twitterPostMessage:self.postField.text];
+    //clear postField
+    //[TwitterPost twitterPostMessageWithImage:self.postField.text];
+    self.postField.text = @"";
+    
+    //[TwitterPost twitterUploadImage:self.imageView.image];
+    //[FBPost FBUploadPhoto:self.imageView.image];
+
+}
 
 //start imagepicker
 
