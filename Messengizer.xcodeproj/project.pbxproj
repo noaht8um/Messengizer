@@ -7,6 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A5523D61AE815E700D21E60 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5523D31AE815E700D21E60 /* menu.png */; };
+		0A5523D71AE815E700D21E60 /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5523D41AE815E700D21E60 /* menu@2x.png */; };
+		0A5523D81AE815E700D21E60 /* nav_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5523D51AE815E700D21E60 /* nav_bg.png */; };
+		0A5523DC1AE8765800D21E60 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5523DB1AE8765800D21E60 /* SWRevealViewController.m */; };
+		0A5523E01AE895BB00D21E60 /* StartPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5523DF1AE895BB00D21E60 /* StartPageViewController.m */; };
+		0A5523E31AE8970A00D21E60 /* SidebarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5523E21AE8970A00D21E60 /* SidebarViewController.m */; };
+		0A5523ED1AE8B09F00D21E60 /* a1228223.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5523E71AE8B09F00D21E60 /* a1228223.png */; };
+		0A5523EE1AE8B09F00D21E60 /* Folder Add.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5523E81AE8B09F00D21E60 /* Folder Add.png */; };
+		0A5523EF1AE8B09F00D21E60 /* icon-profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5523E91AE8B09F00D21E60 /* icon-profile.png */; };
+		0A5523F01AE8B09F00D21E60 /* images.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0A5523EA1AE8B09F00D21E60 /* images.jpeg */; };
+		0A5523F11AE8B09F00D21E60 /* minimal_social_media_icons__psd__by_softarea-d5c0f60.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5523EB1AE8B09F00D21E60 /* minimal_social_media_icons__psd__by_softarea-d5c0f60.png */; };
+		0A5523F21AE8B09F00D21E60 /* users.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5523EC1AE8B09F00D21E60 /* users.png */; };
+		0A5523F51AE9657000D21E60 /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5523F31AE9657000D21E60 /* add.png */; };
+		0A5523F61AE9657000D21E60 /* add_folder.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5523F41AE9657000D21E60 /* add_folder.png */; };
+		0A5523F81AE9675200D21E60 /* logout-xl.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5523F71AE9675200D21E60 /* logout-xl.png */; };
+		0A5523FB1AEEF45B00D21E60 /* AddAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5523FA1AEEF45B00D21E60 /* AddAccountViewController.m */; };
+		0A5523FE1AEEFB4600D21E60 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5523FD1AEEFB4600D21E60 /* SettingsViewController.m */; };
+		0AF96F411AEFEFE200629731 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF96F401AEFEFE200629731 /* libsqlite3.dylib */; };
+		0AF96F441AEFF04800629731 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF96F431AEFF04800629731 /* DBManager.m */; };
+		0AF970D31AF0024000629731 /* messengizer.sql in Resources */ = {isa = PBXBuildFile; fileRef = 0AF970D21AF0024000629731 /* messengizer.sql */; };
+		0AF970D61AF00DEF00629731 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF970D51AF00DEF00629731 /* SignUpViewController.m */; };
 		162C31A11ADDD9300091E4F0 /* FBPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 162C31A01ADDD9300091E4F0 /* FBPost.m */; };
 		162C31A51ADDE22C0091E4F0 /* FBGet.m in Sources */ = {isa = PBXBuildFile; fileRef = 162C31A41ADDE22C0091E4F0 /* FBGet.m */; };
 		164B7BD71ADEDA3C005528D9 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 164B7BD41ADEDA3C005528D9 /* TwitterKit.framework */; };
@@ -39,6 +60,34 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A5523D31AE815E700D21E60 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menu.png; path = Messengizer/Images/menu.png; sourceTree = "<group>"; };
+		0A5523D41AE815E700D21E60 /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "menu@2x.png"; path = "Messengizer/Images/menu@2x.png"; sourceTree = "<group>"; };
+		0A5523D51AE815E700D21E60 /* nav_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nav_bg.png; path = Messengizer/Images/nav_bg.png; sourceTree = "<group>"; };
+		0A5523DA1AE8765800D21E60 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		0A5523DB1AE8765800D21E60 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		0A5523DE1AE895BB00D21E60 /* StartPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartPageViewController.h; sourceTree = "<group>"; };
+		0A5523DF1AE895BB00D21E60 /* StartPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartPageViewController.m; sourceTree = "<group>"; };
+		0A5523E11AE8970A00D21E60 /* SidebarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SidebarViewController.h; sourceTree = "<group>"; };
+		0A5523E21AE8970A00D21E60 /* SidebarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SidebarViewController.m; sourceTree = "<group>"; };
+		0A5523E71AE8B09F00D21E60 /* a1228223.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = a1228223.png; sourceTree = "<group>"; };
+		0A5523E81AE8B09F00D21E60 /* Folder Add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Folder Add.png"; sourceTree = "<group>"; };
+		0A5523E91AE8B09F00D21E60 /* icon-profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-profile.png"; sourceTree = "<group>"; };
+		0A5523EA1AE8B09F00D21E60 /* images.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images.jpeg; sourceTree = "<group>"; };
+		0A5523EB1AE8B09F00D21E60 /* minimal_social_media_icons__psd__by_softarea-d5c0f60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "minimal_social_media_icons__psd__by_softarea-d5c0f60.png"; sourceTree = "<group>"; };
+		0A5523EC1AE8B09F00D21E60 /* users.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = users.png; sourceTree = "<group>"; };
+		0A5523F31AE9657000D21E60 /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
+		0A5523F41AE9657000D21E60 /* add_folder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add_folder.png; sourceTree = "<group>"; };
+		0A5523F71AE9675200D21E60 /* logout-xl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logout-xl.png"; sourceTree = "<group>"; };
+		0A5523F91AEEF45B00D21E60 /* AddAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddAccountViewController.h; sourceTree = "<group>"; };
+		0A5523FA1AEEF45B00D21E60 /* AddAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddAccountViewController.m; sourceTree = "<group>"; };
+		0A5523FC1AEEFB4600D21E60 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		0A5523FD1AEEFB4600D21E60 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		0AF96F401AEFEFE200629731 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		0AF96F421AEFF04800629731 /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		0AF96F431AEFF04800629731 /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
+		0AF970D21AF0024000629731 /* messengizer.sql */ = {isa = PBXFileReference; lastKnownFileType = file; path = messengizer.sql; sourceTree = "<group>"; };
+		0AF970D41AF00DEF00629731 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		0AF970D51AF00DEF00629731 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
 		162C319F1ADDD9300091E4F0 /* FBPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBPost.h; sourceTree = "<group>"; };
 		162C31A01ADDD9300091E4F0 /* FBPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBPost.m; sourceTree = "<group>"; };
 		162C31A31ADDE22C0091E4F0 /* FBGet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBGet.h; sourceTree = "<group>"; };
@@ -78,6 +127,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AF96F411AEFEFE200629731 /* libsqlite3.dylib in Frameworks */,
 				16B145441AD5B58600DD1D32 /* FBSDKLoginKit.framework in Frameworks */,
 				16B145421AD5B38B00DD1D32 /* FBSDKCoreKit.framework in Frameworks */,
 				164B7BD71ADEDA3C005528D9 /* TwitterKit.framework in Frameworks */,
@@ -95,10 +145,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A5523D21AE8158D00D21E60 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				0A5523F71AE9675200D21E60 /* logout-xl.png */,
+				0A5523F31AE9657000D21E60 /* add.png */,
+				0A5523F41AE9657000D21E60 /* add_folder.png */,
+				0A5523E71AE8B09F00D21E60 /* a1228223.png */,
+				0A5523E81AE8B09F00D21E60 /* Folder Add.png */,
+				0A5523E91AE8B09F00D21E60 /* icon-profile.png */,
+				0A5523EA1AE8B09F00D21E60 /* images.jpeg */,
+				0A5523EB1AE8B09F00D21E60 /* minimal_social_media_icons__psd__by_softarea-d5c0f60.png */,
+				0A5523EC1AE8B09F00D21E60 /* users.png */,
+				0A5523D31AE815E700D21E60 /* menu.png */,
+				0A5523D41AE815E700D21E60 /* menu@2x.png */,
+				0A5523D51AE815E700D21E60 /* nav_bg.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		0A5523D91AE875C100D21E60 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				0A5523DA1AE8765800D21E60 /* SWRevealViewController.h */,
+				0A5523DB1AE8765800D21E60 /* SWRevealViewController.m */,
+			);
+			name = Library;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		0A5523DD1AE8951700D21E60 /* New Storyboard Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0A5523F91AEEF45B00D21E60 /* AddAccountViewController.h */,
+				0A5523FA1AEEF45B00D21E60 /* AddAccountViewController.m */,
+				0A5523DE1AE895BB00D21E60 /* StartPageViewController.h */,
+				0A5523DF1AE895BB00D21E60 /* StartPageViewController.m */,
+				0A5523E11AE8970A00D21E60 /* SidebarViewController.h */,
+				0A5523E21AE8970A00D21E60 /* SidebarViewController.m */,
+				0A5523FC1AEEFB4600D21E60 /* SettingsViewController.h */,
+				0A5523FD1AEEFB4600D21E60 /* SettingsViewController.m */,
+				0AF96F421AEFF04800629731 /* DBManager.h */,
+				0AF96F431AEFF04800629731 /* DBManager.m */,
+				0AF970D41AF00DEF00629731 /* SignUpViewController.h */,
+				0AF970D51AF00DEF00629731 /* SignUpViewController.m */,
+				0AF970D21AF0024000629731 /* messengizer.sql */,
+			);
+			name = "New Storyboard Classes";
+			sourceTree = "<group>";
+		};
 		16B1450F1AD5B27700DD1D32 = {
 			isa = PBXGroup;
 			children = (
 				16B1451A1AD5B27700DD1D32 /* Messengizer */,
+				0A5523D21AE8158D00D21E60 /* Images */,
 				16B145341AD5B27700DD1D32 /* MessengizerTests */,
 				16B145191AD5B27700DD1D32 /* Products */,
 			);
@@ -116,6 +216,7 @@
 		16B1451A1AD5B27700DD1D32 /* Messengizer */ = {
 			isa = PBXGroup;
 			children = (
+				0A5523DD1AE8951700D21E60 /* New Storyboard Classes */,
 				16B145221AD5B27700DD1D32 /* MainViewController.h */,
 				16B145231AD5B27700DD1D32 /* MainViewController.m */,
 				16D14AEC1ADE1B9800D49723 /* AddAppsViewController.h */,
@@ -137,6 +238,7 @@
 				16B145251AD5B27700DD1D32 /* Main.storyboard */,
 				16B145281AD5B27700DD1D32 /* Images.xcassets */,
 				16B1452A1AD5B27700DD1D32 /* LaunchScreen.xib */,
+				0A5523D91AE875C100D21E60 /* Library */,
 				16B1451B1AD5B27700DD1D32 /* Supporting Files */,
 			);
 			path = Messengizer;
@@ -145,6 +247,7 @@
 		16B1451B1AD5B27700DD1D32 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0AF96F401AEFEFE200629731 /* libsqlite3.dylib */,
 				164B7BD41ADEDA3C005528D9 /* TwitterKit.framework */,
 				164B7BD51ADEDA3C005528D9 /* TwitterKitResources.bundle */,
 				164B7BD61ADEDA3C005528D9 /* Fabric.framework */,
@@ -255,10 +358,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A5523EE1AE8B09F00D21E60 /* Folder Add.png in Resources */,
 				164B7BD81ADEDA3C005528D9 /* TwitterKitResources.bundle in Resources */,
+				0A5523D71AE815E700D21E60 /* menu@2x.png in Resources */,
+				0A5523D61AE815E700D21E60 /* menu.png in Resources */,
+				0A5523EF1AE8B09F00D21E60 /* icon-profile.png in Resources */,
+				0A5523F11AE8B09F00D21E60 /* minimal_social_media_icons__psd__by_softarea-d5c0f60.png in Resources */,
+				0A5523F61AE9657000D21E60 /* add_folder.png in Resources */,
 				16B145271AD5B27700DD1D32 /* Main.storyboard in Resources */,
+				0A5523F51AE9657000D21E60 /* add.png in Resources */,
+				0A5523ED1AE8B09F00D21E60 /* a1228223.png in Resources */,
+				0A5523F01AE8B09F00D21E60 /* images.jpeg in Resources */,
+				0AF970D31AF0024000629731 /* messengizer.sql in Resources */,
+				0A5523F81AE9675200D21E60 /* logout-xl.png in Resources */,
 				16B1452C1AD5B27700DD1D32 /* LaunchScreen.xib in Resources */,
+				0A5523F21AE8B09F00D21E60 /* users.png in Resources */,
 				16B145291AD5B27700DD1D32 /* Images.xcassets in Resources */,
+				0A5523D81AE815E700D21E60 /* nav_bg.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,15 +408,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A5523E31AE8970A00D21E60 /* SidebarViewController.m in Sources */,
 				1690832B1ADF092500C6EC75 /* TwitterPost.m in Sources */,
 				16F44EDC1AE46D0E00B0B10E /* CommonMethods.m in Sources */,
 				164B7BDC1ADEDA8B005528D9 /* AddTwitterViewController.m in Sources */,
+				0AF970D61AF00DEF00629731 /* SignUpViewController.m in Sources */,
 				16B145241AD5B27700DD1D32 /* MainViewController.m in Sources */,
 				162C31A11ADDD9300091E4F0 /* FBPost.m in Sources */,
 				16B145211AD5B27700DD1D32 /* AppDelegate.m in Sources */,
+				0AF96F441AEFF04800629731 /* DBManager.m in Sources */,
 				16B1451E1AD5B27700DD1D32 /* main.m in Sources */,
+				0A5523FB1AEEF45B00D21E60 /* AddAccountViewController.m in Sources */,
 				162C31A51ADDE22C0091E4F0 /* FBGet.m in Sources */,
+				0A5523DC1AE8765800D21E60 /* SWRevealViewController.m in Sources */,
 				16D14AEE1ADE1B9800D49723 /* AddAppsViewController.m in Sources */,
+				0A5523FE1AEEFB4600D21E60 /* SettingsViewController.m in Sources */,
+				0A5523E01AE895BB00D21E60 /* StartPageViewController.m in Sources */,
 				16D14AE81ADE173C00D49723 /* AddFBViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,6 +554,7 @@
 					"~/Documents/FacebookSDK",
 					"$(PROJECT_DIR)",
 					/Users/noahtatum/Documents/FacebookSDK,
+					"$(PROJECT_DIR)/Messengizer/FacebookSDK",
 				);
 				INFOPLIST_FILE = Messengizer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
@@ -452,6 +576,7 @@
 					"~/Documents/FacebookSDK",
 					"$(PROJECT_DIR)",
 					/Users/noahtatum/Documents/FacebookSDK,
+					"$(PROJECT_DIR)/Messengizer/FacebookSDK",
 				);
 				INFOPLIST_FILE = Messengizer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
