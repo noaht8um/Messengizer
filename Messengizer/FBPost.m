@@ -20,6 +20,8 @@
              if (!error) {
                  //NSLog(@"Post id:%@", result[@"id"]);
                  NSLog(@"Result:%@", result);
+                 UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"" message:@"post successful!" delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
+                 [alert show];
              }
          }];
     }
