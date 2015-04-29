@@ -52,51 +52,16 @@
     }
 }
 
-+ (NSString *)twitterUploadImage:(UIImage *)imageToUpload {
++ (void)twitterPostMessageWithImage:(UIImage *)uploadImage :(NSString *)postMessage {
     
-    __block NSString *returningJSON;
+    NSString *encodedImage = [self encodeImageTo64:uploadImage];
     
-    NSString *encodedImage = [self encodeImageTo64:imageToUpload];
-    
-    NSString *testPostEndpoint = @"https://upload.twitter.com/1.1/media/upload.json";
-    NSDictionary *params = @{@"media" : encodedImage};
+    NSString *statusesShowEndpoint = @"https://upload.twitter.com/1.1/media/upload.json";
+    NSDictionary *params = @{@"media_data" : encodedImage};
     NSError *clientError;
     NSURLRequest *request = [[[Twitter sharedInstance] APIClient]
                              URLRequestWithMethod:@"POST"
-                             URL:testPostEndpoint
-                             parameters:params
-                             error:&clientError];
-    
-        [[[Twitter sharedInstance] APIClient]
-         sendTwitterRequest:request
-         completion:^(NSURLResponse *response,
-                      NSData *data,
-                      NSError *connectionError) {
-             
-                 NSError *jsonError;
-                 NSDictionary *json = [NSJSONSerialization
-                                       JSONObjectWithData:data
-                                       options:0
-                                       error:&jsonError];
-             returningJSON = json[@"media_id"];
-                 NSLog(@"%@", json[@"media_id"]);
-
-                 NSLog(@"Error: %@", connectionError);
-         }];
-        NSLog(@"Error: %@", clientError);
-    return returningJSON;
-}
-
-+ (void)twitterPostMessageWithImage:(NSString *)postMessage {
-    
-    //UIImage *testImage =
-    
-    NSString *testPostEndpoint = @"https://api.twitter.com/1.1/statuses/update.json";
-    NSDictionary *params = @{@"status" : postMessage};
-    NSError *clientError;
-    NSURLRequest *request = [[[Twitter sharedInstance] APIClient]
-                             URLRequestWithMethod:@"POST"
-                             URL:testPostEndpoint
+                             URL:statusesShowEndpoint
                              parameters:params
                              error:&clientError];
     
@@ -107,17 +72,52 @@
                       NSData *data,
                       NSError *connectionError) {
              if (data) {
-                 // handle the response data e.g.
+
                  NSError *jsonError;
                  NSDictionary *json = [NSJSONSerialization
                                        JSONObjectWithData:data
                                        options:0
                                        error:&jsonError];
                  NSLog(@"%@", json);
+                 
+                     NSString *statusesShowEndpoint = @"https://api.twitter.com/1.1/statuses/update.json";
+                     NSDictionary *params = @{@"status" : postMessage,
+                                              @"media_ids" : json[@"media_id_string"]};
+                     NSError *clientError;
+                     NSURLRequest *request = [[[Twitter sharedInstance] APIClient]
+                                              URLRequestWithMethod:@"POST"
+                                              URL:statusesShowEndpoint
+                                              parameters:params
+                                              error:&clientError];
+                     
+                     if (request) {
+                         [[[Twitter sharedInstance] APIClient]
+                          sendTwitterRequest:request
+                          completion:^(NSURLResponse *response,
+                                       NSData *data,
+                                       NSError *connectionError) {
+                              if (data) {
+                                  
+                                  NSError *jsonError;
+                                  NSDictionary *json = [NSJSONSerialization
+                                                        JSONObjectWithData:data
+                                                        options:0
+                                                        error:&jsonError];
+                                  NSLog(@"%@", json);
+                              }
+                              else {
+                                  NSLog(@"Error: %@", connectionError);
+                              }
+                          }];
+                     }
+                     else {
+                         NSLog(@"Error: %@", clientError);
+                     }
              }
              else {
                  NSLog(@"Error: %@", connectionError);
              }
+             
          }];
     }
     else {

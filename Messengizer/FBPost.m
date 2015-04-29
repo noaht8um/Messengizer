@@ -18,7 +18,6 @@
           HTTPMethod:@"POST"]
          startWithCompletionHandler:^(FBSDKGraphRequestConnection *connection, id result, NSError *error) {
              if (!error) {
-                 //NSLog(@"Post id:%@", result[@"id"]);
                  NSLog(@"Result:%@", result);
                  UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"" message:@"post successful!" delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
                  [alert show];
@@ -27,7 +26,7 @@
     }
 }
 
-+ (void)FBUploadPhoto:(UIImage *)uploadImage {
++ (void)FBUploadPhoto:(UIImage *)uploadImage :(NSString *)postMessage {
     
     NSData *encodedImage = [CommonMethods encodeImageTo64:uploadImage];
     
@@ -35,11 +34,10 @@
         [[[FBSDKGraphRequest alloc]
           initWithGraphPath:@"me/photos"
           parameters: @{ @"source" : encodedImage,
-                         @"caption" : @"hi" }
+                         @"caption" : postMessage }
           HTTPMethod:@"POST"]
          startWithCompletionHandler:^(FBSDKGraphRequestConnection *connection, id result, NSError *error) {
              if (!error) {
-                 //NSLog(@"Post id:%@", result[@"id"]);
                  NSLog(@"Result:%@", result);
              }
          }];

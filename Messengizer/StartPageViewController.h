@@ -12,7 +12,7 @@
 #import "FBGet.h"
 #import "TwitterPost.h"
 
-@interface StartPageViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@interface StartPageViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *sidebarButton;
 
 //Noah Stuff
@@ -22,6 +22,5 @@
 
 - (IBAction)takePhoto:  (UIButton *)sender;
 - (IBAction)choosePhoto:(UIButton *)sender;
-
 
 @end

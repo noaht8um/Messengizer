@@ -17,22 +17,43 @@
 
 - (IBAction)postButton:(id)sender {
     
-    if (self.imageView.image) {
-        [FBPost FBUploadPhoto:self.imageView.image];
-        
-        [TwitterPost twitterUploadImage:self.imageView.image];
-        [TwitterPost twitterPostMessageWithImage:self.postField.text];
+    if (self.imageView.image && ![self.postField.text isEqualToString:@""]) {
+        [FBPost FBUploadPhoto:self.imageView.image :self.postField.text];
+        [TwitterPost twitterPostMessageWithImage:self.imageView.image :self.postField.text];
+        NSLog(@"image and text!");
+    }
+    else if (![self.postField.text isEqualToString:@""]){
+        [FBPost FBPostMessage:self.postField.text];
+        [TwitterPost twitterPostMessage:self.postField.text];
+        NSLog(@"text!");
     }
     else {
-        //post message to facebook from postField
-        [FBPost FBPostMessage:self.postField.text];
         
-        //post message to twitter from postField
-        [TwitterPost twitterPostMessage:self.postField.text];
+        NSLog(@"Enter text!");
+        UIAlertView *alert = [[UIAlertView alloc]
+                              initWithTitle:@"Alert"
+                              message:@"You must enter text to post!"
+                              delegate:self
+                              cancelButtonTitle:@"OK"
+                              otherButtonTitles:nil, nil];
+        [alert show];
     }
     
     //clear postField
     self.postField.text = @"";
+}
+
+//Hide keyboard on enter press
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    
+    // done button was pressed - dismiss keyboard
+    [self.postField resignFirstResponder];
+    return YES;
+}
+
+- (IBAction)clearPhoto:(id)sender {
+    self.imageView.image = nil;
 }
 
 //start imagepicker
@@ -69,7 +90,6 @@
 }
 
 //end imagepicker
-
 
 
 - (void)viewDidLoad {

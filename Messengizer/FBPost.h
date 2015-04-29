@@ -14,6 +14,6 @@
 @interface FBPost : NSObject
 
 + (void)FBPostMessage:(NSString *)postMessage;
-+ (void)FBUploadPhoto:(UIImage *)uploadImage;
-
++ (void)FBUploadPhoto:(UIImage *)uploadImage :(NSString *)postMessage;
+    
 @end

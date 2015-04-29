@@ -480,11 +480,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qDT-7E-iYn">
-                                <rect key="frame" x="15" y="317" width="288" height="155"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img_frame.png" translatesAutoresizingMaskIntoConstraints="NO" id="AMN-h3-JcU">
-                                <rect key="frame" x="40" y="68" width="240" height="128"/>
+                                <rect key="frame" x="40" y="68" width="240" height="120"/>
                             </imageView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AMW-fj-Hgx" customClass="FBSDKProfilePictureView">
                                 <rect key="frame" x="109" y="72" width="100" height="100"/>
@@ -495,13 +492,17 @@
                                 </accessibility>
                             </view>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z7f-8L-jgO">
-                                <rect key="frame" x="15" y="204" width="288" height="30"/>
+                                <rect key="frame" x="15" y="196" width="288" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="voJ-IJ-ZJM" id="CrG-P4-vrl"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sVg-yV-Rgs">
-                                <rect key="frame" x="90" y="236" width="140" height="30"/>
+                                <rect key="frame" x="60" y="234" width="200" height="38"/>
                                 <color key="backgroundColor" red="0.19607843137254902" green="0.29803921568627451" blue="0.44705882352941179" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Post">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -510,17 +511,10 @@
                                     <action selector="postButton:" destination="voJ-IJ-ZJM" eventType="touchUpInside" id="hQh-bX-jyk"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WLO-wG-fsi">
-                                <rect key="frame" x="90" y="274" width="140" height="30"/>
-                                <color key="backgroundColor" red="0.1960784314" green="0.29803921570000003" blue="0.44705882349999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Get">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xBQ-om-iRc">
-                                <rect key="frame" x="90" y="518" width="140" height="30"/>
+                                <rect key="frame" x="60" y="522" width="200" height="38"/>
                                 <color key="backgroundColor" red="0.1960784314" green="0.29803921570000003" blue="0.44705882349999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Choose Photo">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -530,13 +524,32 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aOs-tG-H2I">
-                                <rect key="frame" x="90" y="480" width="140" height="30"/>
+                                <rect key="frame" x="60" y="476" width="200" height="38"/>
                                 <color key="backgroundColor" red="0.1960784314" green="0.29803921570000003" blue="0.44705882349999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Take Photo">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="takePhoto:" destination="voJ-IJ-ZJM" eventType="touchUpInside" id="FZX-Wh-JCh"/>
+                                </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ep7-bZ-NEG">
+                                <rect key="frame" x="60" y="430" width="200" height="38"/>
+                                <color key="backgroundColor" red="0.1960784314" green="0.29803921570000003" blue="0.44705882349999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Clear Photo">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearPhoto:" destination="voJ-IJ-ZJM" eventType="touchUpInside" id="KLw-nk-ceo"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qDT-7E-iYn">
+                                <rect key="frame" x="88" y="280" width="142" height="142"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>

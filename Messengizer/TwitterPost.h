@@ -13,7 +13,5 @@
 @interface TwitterPost : NSObject
 
 + (void)twitterPostMessage:(NSString *)postMessage;
-+ (NSString *)twitterUploadImage:(UIImage  *)imageToPost;
-+ (void)twitterPostMessageWithImage:(NSString *)postMessage;
-
++ (void)twitterPostMessageWithImage:(UIImage *)uploadImage :(NSString *)postMessage;
 @end
